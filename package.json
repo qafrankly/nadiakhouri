@@ -1,14 +1,14 @@
 {
-thumbnail: "https://wnow-modules.s3.amazonaws.com/icon_stroke_news_articlelist.svg",
-affiliates: [
+"thumbnail": "https://wnow-modules.s3.amazonaws.com/icon_stroke_news_articlelist.svg",
+"affiliates": [
 "qafrankly"
 ],
-isHeaderComponent: true,
-propTypes: {
-text: "PropTypes.string"
+"isHeaderComponent": true,
+"propTypes": {
+"text": "PropTypes.string"
 },
-defaultProps: {
-text: "Menu Demo!"
+"defaultProps": {
+"text": "Menu Demo!"
 },
-id: "franklyinc/FranklyModulesMenuDemo"
+"id": "franklyinc/FranklyModulesMenuDemo"
 }
