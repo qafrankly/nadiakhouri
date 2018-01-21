@@ -47,7 +47,6 @@
 			"textAlignment": "right",
 			"displayResultsOnNewPage": true
 		},
-		"collapseNavigation": false,
 		"gridIconColor": "#000",
 		"enableDropDownMenu": true,
 		"staticNavigationOptions": {
@@ -77,36 +76,4 @@
 			}]
 		}
 	}
-}
-    "collapseNavigation": false,
-    "gridIconColor": "#000",
-    "enableDropDownMenu": true,
-    "staticNavigationOptions": {
-      "backgroundColor": "#ccc",
-      "textColor": "#000",
-      "menuItemHoverStyle": {}
-    },
-    "weatherWidget": {
-      "id": "components/weather/CurrentConditionsAtAGlance",
-      "props": {
-        "link": "/weather",
-        "showCityName": true,
-        "transitionTimeInSeconds": 3,
-        "textColor": "#817f7f",
-        "textSize": "large",
-        "iconSize": "large",
-        "zipcodeData": {
-          "FRN_resourceEndpoints": [{
-            "type": "json",
-            "url": "/api/integrations/wsi/current?zipcode=${zipcode}"
-          }]
-        }
-      },
-      "FRN_resourceEndpoints": [{
-        "type": "json",
-        "url": "/api/integrations/wsi/current"
-      }]
-    }
-  }
-}
 }
