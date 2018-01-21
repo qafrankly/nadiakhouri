@@ -4,7 +4,6 @@
 	"affiliates": [
 		"KOTV"
 	],
-{
   "id": "components/core/CollapsibleHeader",
   "tag": "core",
   "isHeaderComponent": true,
