@@ -4,12 +4,80 @@
 	"affiliates": [
 		"KOTV"
 	],
-	"isHeaderComponent": true,
-	"propTypes": {
-		"text": "PropTypes.string"
-	},
-	"defaultProps": {
-		"text": "Menu Demo!"
-	},
-	"id": "franklyinc/FranklyModulesMenuDemo"
+{
+  "id": "components/core/CollapsibleHeader",
+  "tag": "core",
+  "isHeaderComponent": true,
+  "propTypes": {
+    "enableSearch": "PropTypes.bool",
+    "backgroundColor": "PropTypes.string",
+    "subNavstackBackgroundColor": "PropTypes.string",
+    "textColor": "PropTypes.string",
+    "borderOptions": "PropTypes.object",
+    "menuItemStyle": "PropTypes.object",
+    "menuItemHoverStyle": "PropTypes.object",
+    "searchOptions": "PropTypes.object",
+    "menu": "PropTypes.array",
+    "collapseNavigation": "PropTypes.bool",
+    "weatherWidget": "PropTypes.object",
+    "gridIconColor": "PropTypes.string",
+    "enableDropDownMenu": "PropTypes.bool",
+    "enableStaticNavigation": "PropTypes.bool",
+    "staticNavigationOptions": "PropTypes.object"
+  },
+  "defaultProps": {
+    "enableSearch": true,
+    "backgroundColor": "#FFF",
+    "subNavstackBackgroundColor": "#FFF",
+    "textColor": "#000",
+    "borderOptions": {
+      "top": {
+        "enable": true,
+        "color": "#de2828"
+      },
+      "bottom": {
+        "enable": true,
+        "color": "#de2828"
+      }
+    },
+    "menuItemHoverStyle": {},
+    "menuItemStyle": {},
+    "searchOptions": {
+      "numberItems": 10,
+      "backgroundColor": "#FFF",
+      "textColor": "#000",
+      "textAlignment": "right",
+      "displayResultsOnNewPage": true
+    },
+    "collapseNavigation": false,
+    "gridIconColor": "#000",
+    "enableDropDownMenu": true,
+    "staticNavigationOptions": {
+      "backgroundColor": "#ccc",
+      "textColor": "#000",
+      "menuItemHoverStyle": {}
+    },
+    "weatherWidget": {
+      "id": "components/weather/CurrentConditionsAtAGlance",
+      "props": {
+        "link": "/weather",
+        "showCityName": true,
+        "transitionTimeInSeconds": 3,
+        "textColor": "#817f7f",
+        "textSize": "large",
+        "iconSize": "large",
+        "zipcodeData": {
+          "FRN_resourceEndpoints": [{
+            "type": "json",
+            "url": "/api/integrations/wsi/current?zipcode=${zipcode}"
+          }]
+        }
+      },
+      "FRN_resourceEndpoints": [{
+        "type": "json",
+        "url": "/api/integrations/wsi/current"
+      }]
+    }
+  }
+}
 }
