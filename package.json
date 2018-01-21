@@ -1,5 +1,6 @@
 {
   "id": "components/core/CollapsibleHeader",
+  "affiliates":["kotv"],
   "tag": "core",
   "isHeaderComponent": true,
   "propTypes": {
